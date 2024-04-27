@@ -1,0 +1,169 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Контакты" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контакты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контакты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КонтактыРасширеннаяПодсказка" id="42"/>
+			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
+				<InputField name="Почта" id="35">
+					<DataPath>Объект.Почта</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<ContextMenu name="ПочтаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ПочтаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="Номер" id="38">
+					<DataPath>Объект.Номер</DataPath>
+					<TitleLocation>Top</TitleLocation>
+					<Width>17</Width>
+					<ContextMenu name="НомерКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ДниРаботы" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дни работы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дни работы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ДниРаботыРасширеннаяПодсказка" id="44"/>
+			<ChildItems>
+				<Table name="РежимРаботы" id="7">
+					<Representation>List</Representation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.РежимРаботы</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="РежимРаботыКонтекстноеМеню" id="8"/>
+					<AutoCommandBar name="РежимРаботыКоманднаяПанель" id="9">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="РежимРаботыРасширеннаяПодсказка" id="10"/>
+					<SearchStringAddition name="РежимРаботыСтрокаПоиска" id="11">
+						<AdditionSource>
+							<Item>РежимРаботы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РежимРаботыСтрокаПоискаКонтекстноеМеню" id="12"/>
+						<ExtendedTooltip name="РежимРаботыСтрокаПоискаРасширеннаяПодсказка" id="13"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="РежимРаботыСостояниеПросмотра" id="14">
+						<AdditionSource>
+							<Item>РежимРаботы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="РежимРаботыСостояниеПросмотраКонтекстноеМеню" id="15"/>
+						<ExtendedTooltip name="РежимРаботыСостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="РежимРаботыУправлениеПоиском" id="17">
+						<AdditionSource>
+							<Item>РежимРаботы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="РежимРаботыУправлениеПоискомКонтекстноеМеню" id="18"/>
+						<ExtendedTooltip name="РежимРаботыУправлениеПоискомРасширеннаяПодсказка" id="19"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<CheckBoxField name="РежимРаботыРабочийДень" id="23">
+							<DataPath>Объект.РежимРаботы.РабочийДень</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<EditMode>EnterOnInput</EditMode>
+							<HeaderPicture>
+								<xr:Ref>StdPicture.CheckAll</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</HeaderPicture>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="РежимРаботыРабочийДеньКонтекстноеМеню" id="24"/>
+							<ExtendedTooltip name="РежимРаботыРабочийДеньРасширеннаяПодсказка" id="25"/>
+						</CheckBoxField>
+						<InputField name="РежимРаботыДеньНедели" id="26">
+							<DataPath>Объект.РежимРаботы.ДеньНедели</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="РежимРаботыДеньНеделиКонтекстноеМеню" id="27"/>
+							<ExtendedTooltip name="РежимРаботыДеньНеделиРасширеннаяПодсказка" id="28"/>
+						</InputField>
+						<InputField name="РежимРаботыВремяНачала" id="29">
+							<DataPath>Объект.РежимРаботы.ВремяНачала</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=чч:мм</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=чч:мм</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="РежимРаботыВремяНачалаКонтекстноеМеню" id="30"/>
+							<ExtendedTooltip name="РежимРаботыВремяНачалаРасширеннаяПодсказка" id="31"/>
+						</InputField>
+						<InputField name="РежимРаботыВремяОкончания" id="32">
+							<DataPath>Объект.РежимРаботы.ВремяОкончания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<Format>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=19:мм</v8:content>
+								</v8:item>
+							</Format>
+							<EditFormat>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ДФ=19:мм</v8:content>
+								</v8:item>
+							</EditFormat>
+							<ContextMenu name="РежимРаботыВремяОкончанияКонтекстноеМеню" id="33"/>
+							<ExtendedTooltip name="РежимРаботыВремяОкончанияРасширеннаяПодсказка" id="34"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Платформа</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.Code</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

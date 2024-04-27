@@ -1,0 +1,411 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="119">
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="120"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ТабличнаяЧасть1" id="7">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ТабличнаяЧасть1</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТабличнаяЧасть1КонтекстноеМеню" id="8"/>
+			<AutoCommandBar name="ТабличнаяЧасть1КоманднаяПанель" id="9"/>
+			<ExtendedTooltip name="ТабличнаяЧасть1РасширеннаяПодсказка" id="10"/>
+			<SearchStringAddition name="ТабличнаяЧасть1СтрокаПоиска" id="11">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть1</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧасть1СтрокаПоискаКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТабличнаяЧасть1СтрокаПоискаРасширеннаяПодсказка" id="13"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТабличнаяЧасть1СостояниеПросмотра" id="14">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть1</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧасть1СостояниеПросмотраКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ТабличнаяЧасть1СостояниеПросмотраРасширеннаяПодсказка" id="16"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТабличнаяЧасть1УправлениеПоиском" id="17">
+				<AdditionSource>
+					<Item>ТабличнаяЧасть1</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТабличнаяЧасть1УправлениеПоискомКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ТабличнаяЧасть1УправлениеПоискомРасширеннаяПодсказка" id="19"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="OnEditEnd">ТабличнаяЧасть1ПриОкончанииРедактирования</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="ТабличнаяЧасть1НомерСтроки" id="20">
+					<DataPath>Объект.ТабличнаяЧасть1.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ТабличнаяЧасть1НомерСтрокиКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1НомерСтрокиРасширеннаяПодсказка" id="22"/>
+				</LabelField>
+				<InputField name="ТабличнаяЧасть1Сотрудник" id="23">
+					<DataPath>Объект.ТабличнаяЧасть1.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабличнаяЧасть1СотрудникКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1СотрудникРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<CheckBoxField name="ТабличнаяЧасть1День1" id="26">
+					<DataPath>Объект.ТабличнаяЧасть1.День1</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День1КонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День1РасширеннаяПодсказка" id="28"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День1ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День2" id="29">
+					<DataPath>Объект.ТабличнаяЧасть1.День2</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День2КонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День2РасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День2ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День3" id="32">
+					<DataPath>Объект.ТабличнаяЧасть1.День3</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День3КонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День3РасширеннаяПодсказка" id="34"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День3ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День4" id="35">
+					<DataPath>Объект.ТабличнаяЧасть1.День4</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День4КонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День4РасширеннаяПодсказка" id="37"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День4ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День5" id="38">
+					<DataPath>Объект.ТабличнаяЧасть1.День5</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День5КонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День5РасширеннаяПодсказка" id="40"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День5ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День6" id="41">
+					<DataPath>Объект.ТабличнаяЧасть1.День6</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День6КонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День6РасширеннаяПодсказка" id="43"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День6ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День7" id="44">
+					<DataPath>Объект.ТабличнаяЧасть1.День7</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День7КонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День7РасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День7ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День8" id="47">
+					<DataPath>Объект.ТабличнаяЧасть1.День8</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День8КонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День8РасширеннаяПодсказка" id="49"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День8ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День9" id="50">
+					<DataPath>Объект.ТабличнаяЧасть1.День9</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День9КонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День9РасширеннаяПодсказка" id="52"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День9ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День10" id="53">
+					<DataPath>Объект.ТабличнаяЧасть1.День10</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День10КонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День10РасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День10ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День11" id="56">
+					<DataPath>Объект.ТабличнаяЧасть1.День11</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День11КонтекстноеМеню" id="57"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День11РасширеннаяПодсказка" id="58"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День11ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День12" id="59">
+					<DataPath>Объект.ТабличнаяЧасть1.День12</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День12КонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День12РасширеннаяПодсказка" id="61"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День12ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День13" id="62">
+					<DataPath>Объект.ТабличнаяЧасть1.День13</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День13КонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День13РасширеннаяПодсказка" id="64"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День13ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День14" id="65">
+					<DataPath>Объект.ТабличнаяЧасть1.День14</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День14КонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День14РасширеннаяПодсказка" id="67"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День14ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День15" id="68">
+					<DataPath>Объект.ТабличнаяЧасть1.День15</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День15КонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День15РасширеннаяПодсказка" id="70"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День15ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День16" id="71">
+					<DataPath>Объект.ТабличнаяЧасть1.День16</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День16КонтекстноеМеню" id="72"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День16РасширеннаяПодсказка" id="73"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День16ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День17" id="74">
+					<DataPath>Объект.ТабличнаяЧасть1.День17</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День17КонтекстноеМеню" id="75"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День17РасширеннаяПодсказка" id="76"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День17ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День18" id="77">
+					<DataPath>Объект.ТабличнаяЧасть1.День18</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День18КонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День18РасширеннаяПодсказка" id="79"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День18ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День19" id="80">
+					<DataPath>Объект.ТабличнаяЧасть1.День19</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День19КонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День19РасширеннаяПодсказка" id="82"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День19ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День20" id="83">
+					<DataPath>Объект.ТабличнаяЧасть1.День20</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День20КонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День20РасширеннаяПодсказка" id="85"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День20ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День21" id="86">
+					<DataPath>Объект.ТабличнаяЧасть1.День21</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День21КонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День21РасширеннаяПодсказка" id="88"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День21ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День22" id="89">
+					<DataPath>Объект.ТабличнаяЧасть1.День22</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День22КонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День22РасширеннаяПодсказка" id="91"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День22ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День23" id="92">
+					<DataPath>Объект.ТабличнаяЧасть1.День23</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День23КонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День23РасширеннаяПодсказка" id="94"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День23ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День24" id="95">
+					<DataPath>Объект.ТабличнаяЧасть1.День24</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День24КонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День24РасширеннаяПодсказка" id="97"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День24ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День25" id="98">
+					<DataPath>Объект.ТабличнаяЧасть1.День25</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День25КонтекстноеМеню" id="99"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День25РасширеннаяПодсказка" id="100"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День25ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День26" id="101">
+					<DataPath>Объект.ТабличнаяЧасть1.День26</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День26КонтекстноеМеню" id="102"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День26РасширеннаяПодсказка" id="103"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День26ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День27" id="104">
+					<DataPath>Объект.ТабличнаяЧасть1.День27</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День27КонтекстноеМеню" id="105"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День27РасширеннаяПодсказка" id="106"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День27ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День28" id="107">
+					<DataPath>Объект.ТабличнаяЧасть1.День28</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День28КонтекстноеМеню" id="108"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День28РасширеннаяПодсказка" id="109"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День28ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День29" id="110">
+					<DataPath>Объект.ТабличнаяЧасть1.День29</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День29КонтекстноеМеню" id="111"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День29РасширеннаяПодсказка" id="112"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День29ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День30" id="113">
+					<DataPath>Объект.ТабличнаяЧасть1.День30</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День30КонтекстноеМеню" id="114"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День30РасширеннаяПодсказка" id="115"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День30ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ТабличнаяЧасть1День31" id="116">
+					<DataPath>Объект.ТабличнаяЧасть1.День31</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТабличнаяЧасть1День31КонтекстноеМеню" id="117"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1День31РасширеннаяПодсказка" id="118"/>
+					<Events>
+						<Event name="OnChange">ТабличнаяЧасть1День31ПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="ТабличнаяЧасть1КоличествоОтработаныхДней" id="121">
+					<DataPath>Объект.ТабличнаяЧасть1.КоличествоОтработаныхДней</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТабличнаяЧасть1КоличествоОтработаныхДнейКонтекстноеМеню" id="122"/>
+					<ExtendedTooltip name="ТабличнаяЧасть1КоличествоОтработаныхДнейРасширеннаяПодсказка" id="123"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.Табель</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>

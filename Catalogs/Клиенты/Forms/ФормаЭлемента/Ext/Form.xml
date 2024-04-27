@@ -1,0 +1,264 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<InputField name="Код" id="24">
+			<DataPath>Объект.Code</DataPath>
+			<ContextMenu name="КодКонтекстноеМеню" id="25"/>
+			<ExtendedTooltip name="КодРасширеннаяПодсказка" id="26"/>
+		</InputField>
+		<UsualGroup name="Клиент" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Клиент</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="КлиентРасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<Pages name="И" id="65">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>И</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>И</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИРасширеннаяПодсказка" id="66"/>
+					<ChildItems>
+						<Page name="ОсновныеДанные" id="22">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОсновныеДанныеРасширеннаяПодсказка" id="23"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="ДатаРождения" id="13">
+									<DataPath>Объект.ДатаРождения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ДатаРожденияКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ДатаРожденияРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="Курс" id="85">
+									<DataPath>Объект.Курс</DataPath>
+									<ContextMenu name="КурсКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="КурсРасширеннаяПодсказка" id="87"/>
+								</InputField>
+								<InputField name="Группа" id="82">
+									<DataPath>Объект.Группа</DataPath>
+									<ContextMenu name="ГруппаКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="84"/>
+								</InputField>
+								<InputField name="Город2" id="88">
+									<DataPath>Объект.Город</DataPath>
+									<ContextMenu name="Город2КонтекстноеМеню" id="89"/>
+									<ExtendedTooltip name="Город2РасширеннаяПодсказка" id="90"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="КонтактныеДанные" id="27">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контактные данные</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контактные данные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КонтактныеДанныеРасширеннаяПодсказка" id="28"/>
+							<ChildItems>
+								<InputField name="Телефон" id="7">
+									<DataPath>Объект.Телефон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТелефонКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="ТелефонРасширеннаяПодсказка" id="9"/>
+								</InputField>
+								<InputField name="Почта" id="10">
+									<DataPath>Объект.Почта</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ПочтаКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ПочтаРасширеннаяПодсказка" id="12"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ЗаконныйПредставитель" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Законный представитель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Законный представитель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<ExtendedTooltip name="ЗаконныйПредставительРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<Pages name="ИЗ" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИЗ</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ИЗ</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ИЗРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Page name="ОсновныеДанные1" id="29">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Основные данные1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ОсновныеДанные1РасширеннаяПодсказка" id="30"/>
+							<ChildItems>
+								<InputField name="ФИО" id="31">
+									<DataPath>Объект.ФИО</DataPath>
+									<ContextMenu name="ФИОКонтекстноеМеню" id="32"/>
+									<ExtendedTooltip name="ФИОРасширеннаяПодсказка" id="33"/>
+								</InputField>
+								<InputField name="ДатаРождения1" id="67">
+									<DataPath>Объект.ДатаРождения1</DataPath>
+									<ContextMenu name="ДатаРождения1КонтекстноеМеню" id="68"/>
+									<ExtendedTooltip name="ДатаРождения1РасширеннаяПодсказка" id="69"/>
+								</InputField>
+								<InputField name="Город1" id="91">
+									<DataPath>Объект.Город</DataPath>
+									<ContextMenu name="Город1КонтекстноеМеню" id="92"/>
+									<ExtendedTooltip name="Город1РасширеннаяПодсказка" id="93"/>
+								</InputField>
+								<InputField name="Город" id="76">
+									<DataPath>1/0:14053a44-5918-4b3f-8c7b-c2875772b536</DataPath>
+									<ContextMenu name="ГородКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ГородРасширеннаяПодсказка" id="78"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="ПаспортныеДанные" id="39">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Паспортные данные</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Паспортные данные</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ПаспортныеДанныеРасширеннаяПодсказка" id="40"/>
+							<ChildItems>
+								<InputField name="КемВыдан" id="52">
+									<DataPath>Объект.КемВыдан</DataPath>
+									<ContextMenu name="КемВыданКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="КемВыданРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="Серия" id="41">
+									<DataPath>Объект.Серия</DataPath>
+									<ContextMenu name="СерияКонтекстноеМеню" id="42"/>
+									<ExtendedTooltip name="СерияРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="Номер" id="46">
+									<DataPath>Объект.Номер</DataPath>
+									<ContextMenu name="НомерКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="48"/>
+								</InputField>
+								<InputField name="ДатаВыдачи" id="49">
+									<DataPath>Объект.ДатаВыдачи</DataPath>
+									<ContextMenu name="ДатаВыдачиКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ДатаВыдачиРасширеннаяПодсказка" id="51"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+						<Page name="КонтактныеДанные1" id="55">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контактные данные</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Контактные данные1</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="КонтактныеДанные1РасширеннаяПодсказка" id="56"/>
+							<ChildItems>
+								<InputField name="Телефон1" id="70">
+									<DataPath>Объект.Телефон1</DataPath>
+									<ContextMenu name="Телефон1КонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="Телефон1РасширеннаяПодсказка" id="72"/>
+								</InputField>
+								<InputField name="Почта1" id="73">
+									<DataPath>Объект.Почта1</DataPath>
+									<ContextMenu name="Почта1КонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="Почта1РасширеннаяПодсказка" id="75"/>
+								</InputField>
+							</ChildItems>
+						</Page>
+					</ChildItems>
+				</Pages>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:CatalogObject.Клиенты</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

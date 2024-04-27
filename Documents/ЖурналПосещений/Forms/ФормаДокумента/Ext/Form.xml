@@ -1,0 +1,123 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.17">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="38">
+			<ShowTitle>false</ShowTitle>
+			<ThroughAlign>Use</ThroughAlign>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Преподаватель" id="7">
+			<DataPath>Объект.Преподаватель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПреподавательКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПреподавательРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ЗанятиеПоРасписанию" id="10">
+			<DataPath>Объект.ЗанятиеПоРасписанию</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗанятиеПоРасписаниюКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗанятиеПоРасписаниюРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<InputField name="Группа" id="13">
+			<DataPath>Объект.Группа</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ГруппаКонтекстноеМеню" id="14"/>
+			<ExtendedTooltip name="ГруппаРасширеннаяПодсказка" id="15"/>
+			<Events>
+				<Event name="OnChange">ГруппаПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Учащиеся" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Учащиеся</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="УчащиесяКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="УчащиесяКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="УчащиесяРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="УчащиесяСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>Учащиеся</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="УчащиесяСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="УчащиесяСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="УчащиесяСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>Учащиеся</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="УчащиесяСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="УчащиесяСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="УчащиесяУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>Учащиеся</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="УчащиесяУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="УчащиесяУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="УчащиесяНомерСтроки" id="29">
+					<DataPath>Объект.Учащиеся.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="УчащиесяНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="УчащиесяНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="УчащиесяУчащийся" id="32">
+					<DataPath>Объект.Учащиеся.Учащийся</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="УчащиесяУчащийсяКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="УчащиесяУчащийсяРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<CheckBoxField name="УчащиесяПосетилЗанятие" id="35">
+					<DataPath>Объект.Учащиеся.ПосетилЗанятие</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="УчащиесяПосетилЗанятиеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="УчащиесяПосетилЗанятиеРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ЖурналПосещений</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
